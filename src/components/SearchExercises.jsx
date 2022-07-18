@@ -24,7 +24,6 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
 			setExercises(searchedExercises);
 			setSearch("");
-			// console.log(searchedExercises);
 		}
 	};
 
@@ -34,8 +33,6 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 				"https://exercisedb.p.rapidapi.com/exercises/bodyPartList",
 				exerciseOptions
 			);
-
-			console.log(bodyPartsData);
 
 			setBodyParts(["all", ...bodyPartsData]);
 		};
@@ -91,7 +88,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 			<Box sx={{ position: "relative", width: "100%", p: "20px" }}>
 				<HorizontalScrollbar
 					data={bodyParts}
-					// bodyParts
+					isBodyPart
 					setBodyPart={setBodyPart}
 					bodyPart={bodyPart}
 				/>

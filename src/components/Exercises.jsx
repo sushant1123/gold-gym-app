@@ -7,8 +7,8 @@ import { exerciseOptions, fetchData } from "../utils/fetchData";
 
 const Exercises = ({ setExercises, exercises, bodyPart }) => {
 	const [currentPage, setCurrentPage] = useState(1);
-	const [exercisesPerPage] = useState(6);
-	// const exercisesPerPage = 9;
+	const [exercisesPerPage] = useState(9);
+
 	const paginate = (e, value) => {
 		setCurrentPage(value);
 

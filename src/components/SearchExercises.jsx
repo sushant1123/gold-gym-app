@@ -24,7 +24,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
 			setExercises(searchedExercises);
 			setSearch("");
-			console.log(searchedExercises);
+			// console.log(searchedExercises);
 		}
 	};
 

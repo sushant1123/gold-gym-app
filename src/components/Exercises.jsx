@@ -30,11 +30,11 @@ const Exercises = ({ setExercises, exercises, bodyPart }) => {
 					exerciseOptions
 				);
 			}
-
 			setExercises(exercisesData);
 		};
 
 		fetchExercisesData();
+		//eslint-disable-next-line
 	}, [bodyPart]);
 
 	const indexOfLastExercise = exercisesPerPage * currentPage;
